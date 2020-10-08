@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo "welcome to flip coin simulator "
-function coin() {
 HEAD=0
 TAIL=1
 
