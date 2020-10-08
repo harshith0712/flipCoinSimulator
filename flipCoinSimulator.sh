@@ -22,4 +22,14 @@ tailcount=0
 					;;
 			esac
 	done
-}
+	if [ $headcount -gt $tailcount ]
+	then
+		difference=$(($headcount - $tailcount))
+		echo "heads won with a margin of $difference"
+	elif [ $tailcount -gt $headcount ]
+	then
+		difference=$(($tailcount - $headcount))
+		echo "tails won with a margin of $difference"
+	else
+		echo "they are tie"
+	fi
